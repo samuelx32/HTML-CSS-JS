@@ -1,0 +1,164 @@
+*{
+    padding:0;
+    margin:0;
+    color:black; 
+}
+
+h1,h2{
+    font-family:Roboto,sans-serif;
+    color:#0B0B3B;
+}
+
+p{
+    font-size: 16px;
+    font-family: sans-serif,arial;
+}
+
+img{
+    width:100%;
+    height: auto;
+}
+
+.texto{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 25px;
+}
+
+/*Geral Acima-----------------*/
+
+.justificado{
+    text-align: justify;
+}
+
+.imagem-maior{
+    width:50vw;
+    
+}
+
+.imagem-menor{
+    width:40vw;
+}
+
+.borda {
+    border:black 10px solid;
+    border-radius:10px;
+}
+
+.linha{
+    border: 0; 
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+/*Classes Personalizadas Acima--------------*/
+
+#musica-topo{
+    background-color: black;
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:1em;
+}
+
+.logo{
+    color:#F2F2F2;
+    font-size: 2.2em;
+}
+
+#menu{
+    display:flex;
+}
+
+#menu a{
+    color:#BDBDBD;
+    text-decoration: none;
+    padding-right: 0.8em;
+}
+
+#menu a:hover{
+    color:#E6E6E6;
+}
+
+#musica-intro{
+    text-align: center;
+}
+
+.texto-intro{
+    padding:1em 2em 2em 2em;
+}
+
+/*Parte I, Menu e Intro Acima---------------*/
+
+#generos{
+    background-color: #F2F2F2;
+}
+
+
+.genero{
+    padding:2em 2em 2em 2em;
+}
+
+.genero img{
+    margin:1em 1em 2em 1em;
+}
+
+.genero h2{
+    margin:0em 0em 0.5em 1em;
+}
+
+.genero p{
+    margin:0em 1em 0.5em 1em;
+}
+
+/*Parte II, Generos, Meio Acima---------------------*/
+
+
+#rodape{
+    background-color: black;
+    padding:3vw;
+    text-align: center;
+}
+
+#rodape p{
+    color:#BDBDBD;
+}
+
+
+@media screen and (max-width:800px){
+    .imagem-maior{
+        width:80vw;
+    }
+    
+    .imagem-menor{
+        width:70vw;
+    }
+    .genero{
+        text-align: center;
+    }
+
+    .genero h2{
+        margin:0em 0em 0.5em 0em;
+    }
+
+    #musica-topo{
+        display:flex;
+        flex-direction: column;
+    }
+
+    #menu{
+        display:flex;
+        flex-direction: column;
+        padding:2vw;
+    }
+    
+    #menu a{
+        padding-top: 2vw;
+    }
+
+    
+}

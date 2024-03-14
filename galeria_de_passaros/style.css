@@ -1,0 +1,106 @@
+*{
+    padding:0;
+    margin:0;
+    color:black; 
+}
+
+h1,h2{
+    font-family:Roboto,sans-serif;
+}
+
+p{
+    font-size: 16px;
+    font-family: sans-serif,arial;
+}
+
+img{
+    width:100%;
+    height: auto;
+}
+
+.texto{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 25px;
+}
+
+.linha{
+    border: 0; 
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+/*Geral Acima-----------------*/
+
+#topo{
+    background-color: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1em;
+}
+
+#topo img{
+    width: 8vw;
+}
+
+#topo h1{
+    font-size: 3vw;
+}
+
+#grade{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:2vw 5vw;
+    padding:3vw;
+    align-items: center;
+    justify-items: center; 
+}
+
+#grade img{
+    width: 26vw;
+    height: 17.5vw;
+    border-radius: 5%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    opacity:0.9;
+}
+
+#grade img:hover{
+    opacity:1;
+}
+
+#grade p{
+    text-align: center;
+    margin-top:0.7vw;
+}
+
+
+
+@media screen and (max-width:800px){
+    #grade{
+        grid-template-columns: 1fr;
+        padding:10vw;
+    }
+
+    #grade img{
+        width: 100%;
+        height: auto;
+    }
+
+    #grade p{
+        margin-top:2vw;
+        margin-bottom: 4vw;
+    }
+
+    #topo img{
+        width: 10vw;
+    }
+
+} 
+
+
+
+

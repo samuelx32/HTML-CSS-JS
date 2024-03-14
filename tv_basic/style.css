@@ -1,0 +1,47 @@
+body{
+	
+	background-color: black;
+}
+
+img{
+	width: 100%;
+}
+
+#tv{
+	position: relative;
+	float:left;
+	width:75%;
+	margin:2% 12.5% 2% 12.5%;
+}
+
+#imagem{
+	float:left;
+	width:80%;
+	margin:-55% 0% 0% 2%;
+}
+
+.button{
+	position: relative;
+	float:right;
+	width:11%;
+	margin:-21.5% 3.5% 0% 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

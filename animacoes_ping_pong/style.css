@@ -1,0 +1,148 @@
+body{
+    background-color: black;
+}
+
+section{
+    border:white 3px solid;
+    width:80vw;
+    margin:auto;
+    height: 40vw;
+}
+
+.bloco {
+  height: 2vw;
+  width: 40vw;
+  background: gray;
+  margin: 2vws;
+  border-radius: 5px;
+  position: relative;
+}
+
+#rect {
+  animation-name: bloco;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-out;
+}
+
+#rect2{
+  animation-name: bloco2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-out;
+}
+
+@keyframes bloco {
+  0% {
+    background-color: #0B173B;
+    top:2vw;
+    left:2vw;
+  }
+  25% {
+    background-color: #0431B4;
+  }
+  50% {
+    background-color: #58ACFA;
+    left:38vw;
+  }
+  75% {
+    background-color: black;
+  }
+  100% {
+    top:2vw;
+    background-color: #0B173B;
+    left:2vw;
+  }
+}
+
+
+@keyframes bloco2 {
+  0% {
+    background-color: #00FF80;
+    top:31.5vw;
+    left:38vw;
+  }
+  25% {
+    background-color: #01DF74;
+  }
+  50% {
+    background-color: #58FA58;
+    left:2vw;
+  }
+  75% {
+    background-color: #01DF74;
+  }
+  100% {
+    top:31.5vw;
+    background-color: #58FA58;
+    left:38vw;
+  }
+}
+
+  .bola{
+    background-color: white;
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 50%;
+    position:relative;
+  }
+
+  #centro{
+    animation-name: bola;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-out;
+  }
+
+  @keyframes bola{
+      0%{
+        top: 2.3vw;
+        left:6vw;
+      }
+
+      25%{
+        top: 31.3vw;
+        left:40vw; 
+      }
+
+      50%{
+        top: 2.3vw;
+        left:72vw;
+      }
+
+      75%{
+        top: 31.3vw;
+        left:40vw; 
+      }
+
+      100%{
+        top: 2.3vw;
+        left:7vw;
+      }
+  }
+
+  #play{
+    text-align: center;
+    padding:2.5vw;
+  }
+
+  #play a{
+    border:white 1px solid;
+    padding:0.6vw 1vw;
+    border-radius:8px;
+    text-decoration: none;
+    color:white;
+  }
+
+  #play a:hover{
+    animation-name: botao;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes botao {
+    100%{
+      background-color:#1C1C1C;
+      
+    }
+  }
